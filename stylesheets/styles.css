@@ -110,7 +110,7 @@ img {
 }
 
 header {
-  width:180px;
+  width:210px;
   float:left;
   position:fixed;
   background: #fefdf8; /*pale*/
@@ -179,9 +179,9 @@ section {
   float:right;
   padding-bottom:50px;
   background:#ffffff; /*white*/
-  padding-top:15px;
-  padding-left:20px;
-  padding-right:20px;
+  margin-top:15px;
+  margin-left:20px;
+  margin-right:20px;
 }
 
 small {

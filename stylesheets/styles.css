@@ -112,7 +112,7 @@ header {
   width:210px;
   float:left;
   position:fixed;
-  background: #fefdf8;
+  background: #fefdf8; /*pale*/
 }
 
 header ul {
@@ -177,6 +177,7 @@ section {
   width:640px;
   float:right;
   padding-bottom:50px;
+  background:#ffffff; /*white*/
 }
 
 small {
@@ -195,7 +196,7 @@ footer {
   float:left;
   position:fixed;
   bottom:50px;
-  background: #fefdf8;
+  background:#fefdf8; /*pale*/
 }
 
 @media print, screen and (max-width: 960px) {
@@ -236,6 +237,7 @@ footer {
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap:break-word;
+    background: #fefdf8; /*pale*/
   }
   
   header {

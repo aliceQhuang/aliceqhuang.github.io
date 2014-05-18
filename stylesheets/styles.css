@@ -112,6 +112,7 @@ header {
   width:210px;
   float:left;
   position:fixed;
+  background: #fefdf8;
 }
 
 header ul {
@@ -194,6 +195,7 @@ footer {
   float:left;
   position:fixed;
   bottom:50px;
+  background: #fefdf8;
 }
 
 @media print, screen and (max-width: 960px) {

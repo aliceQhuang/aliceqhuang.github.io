@@ -10,6 +10,7 @@ body {
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#5f5f5f;
   font-weight:300;
+  background: #fefdf8; /*pale*/
 }
 
 h6 {
@@ -237,7 +238,6 @@ footer {
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap:break-word;
-    background: #fefdf8; /*pale*/
   }
   
   header {

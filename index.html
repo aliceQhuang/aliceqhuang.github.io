@@ -69,13 +69,15 @@
         <h2 style="display:inline">Alice Qiqing Huang</h2>
         <p>1B Computer Science</p>
         
-        <p onclick="expand('Qualifications Summary');
+        <!--<p onclick="expand('Qualifications Summary');
                     expand('Work Experience');
                     expand('Education');
                     expand('Personal Projects');
                     expand('Volunteer Experience');
                     expand('Awards &amp Achievements');" 
-                    style="margin:0 0 0px">expand all</p>
+                    style="margin:0 0 0px">expand all</p>-->
+                    
+        <p onclick="expand_all()" style="margin:0 0 2px">expand all</p>
         
         <!--Qualifications Summary Section-->
         <p onclick="expand('Qualifications Summary')" style="display:inline">+ </p>
@@ -270,9 +272,16 @@
     <script src="javascripts/scale.fix.js"></script>
     <script>
       function expand(section) {
-        page_section = document.getElementById(section)
+        page_section = document.getElementById(section); /*added ;*/
         if(page_section.style.display == 'none') {page_section.style.display = '';}
         else {page_section.style.display = 'none';}
+        return false;
+      }
+      function expand_all() {
+        page_sections = document.getElementsByClassName('wrapper');
+        for(i=0; i<elements.length; i++) {
+          i.style.display = '';
+        }
         return false;
       }
     </script>

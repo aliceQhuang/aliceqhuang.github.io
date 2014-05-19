@@ -10,7 +10,7 @@ body {
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#5f5f5f;
   font-weight:300;
-  background: #effbfc; /*blue check*/
+  background: #f5fcfd; /*blue*/
 }
 
 h6 {
@@ -113,7 +113,7 @@ header {
   width:180px;
   float:left;
   position:fixed;
-  background: #effbfc; /*blue*/
+  background: #f5fcfd; /*blue*/
 }
 
 header ul {
@@ -200,7 +200,7 @@ footer {
   float:left;
   position:fixed;
   bottom:50px;
-  background:#effbfc; /*blue*/
+  background:#f5fcfd; /*blue*/
 }
 
 @media print, screen and (max-width: 960px) {

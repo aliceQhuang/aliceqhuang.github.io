@@ -78,7 +78,7 @@
                     style="margin:0 0 0px">expand all</p>-->
                     
         <p onclick="expand_all()" style="margin:0 0 3px; display:inline">expand all</p>
-        <p onclick="collapse_all()" style="margin:0 0 3px">&nbsp;collapse all</p>
+        <p onclick="collapse_all()" style="margin:0 0 3px; display:inline">&nbsp;collapse all</p><br/>
         
         <!--Qualifications Summary Section-->
         <p onclick="expand('Qualifications Summary')" style="display:inline">+ </p>
@@ -290,7 +290,7 @@
         for(i=0; i<page_sections.length; i++) {
           page_sections[i].style.display = 'none';
         }
-        return false;
+        return true;
       }
     </script>
     

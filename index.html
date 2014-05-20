@@ -280,7 +280,7 @@
       function expand_all() {
         page_sections = document.getElementsByTagName("div");
         for(i=0; i<page_sections.length; i++) {
-          i.style.display = '';
+          page_sections[i].style.display = '';
         }
         return false;
       }

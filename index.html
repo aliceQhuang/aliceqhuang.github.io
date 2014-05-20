@@ -77,7 +77,8 @@
                     expand('Awards &amp Achievements');" 
                     style="margin:0 0 0px">expand all</p>-->
                     
-        <p onclick="expand_all()" style="margin:0 0 3px">expand all</p>
+        <p onclick="expand_all()" style="margin:0 0 3px; display:inline">expand all</p>
+        <p onclick="collapse_all()" style="margin:0 0 3px; display:inline">&nbsp;collapse all</p>
         
         <!--Qualifications Summary Section-->
         <p onclick="expand('Qualifications Summary')" style="display:inline">+ </p>
@@ -281,6 +282,13 @@
         page_sections = document.getElementsByTagName("div");
         for(i=0; i<page_sections.length; i++) {
           page_sections[i].style.display = '';
+        }
+        return false;
+      }
+      function collapse_all() {
+        page_sections = document.getElementsByTagName("div");
+        for(i=0; i<page_sections.length; i++) {
+          page_sections[i].style.display = 'none';
         }
         return false;
       }

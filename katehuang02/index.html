@@ -45,9 +45,16 @@
           Twitter: <a href="https://twitter.com/katehuang02">@katehuang02</a>
         </h3>
         
+        <table style="margin:0 0 6px; width:150px">
+          <tr>
+            <td onclick="expand_all()">expand all</td>
+            <td onclick="collapse_all()">collapse all</td>
+          </tr>
+        </table>
+        
         <!--11.10.12 Cozy in the Cold-->
         <p></p>
-        <p onclick="expand('11.10.12')" style="display:inline">+ </p>
+        <p onclick="expand('11.10.12')" style="display:inline; font-size:13px" id="11.10.12 +"><b>+ </b></p>
         <h2 onclick="expand('11.10.12')" style="display:inline">11.</h2><h2 style="display:inline">10.12 Cozy in the Cold</h2>
         
         <div id="11.10.12" style="display:none">
@@ -56,7 +63,7 @@
         
         <!--10.22.12 Floral in the Fall-->
         <p></p>
-        <p onclick="expand('10.22.12')" style="display:inline">+ </p>
+        <p onclick="expand('10.22.12')" style="display:inline; font-size:13px" id="10.22.12 +"><b>+ </b></p>
         <h2 onclick="expand('10.22.12')" style="display:inline">10.</h2><h2 style="display:inline">22.12 Floral in the Fall</h2>
         
         <div id="10.22.12" style="display:none">
@@ -65,7 +72,7 @@
         
         <!--10.21.12 One Direction Inspired Outfit-->
         <p></p>
-        <p onclick="expand('10.21.12')" style="display:inline">+ </p>
+        <p onclick="expand('10.21.12')" style="display:inline; font-size:13px" id="10.21.12 +"><b>+ </b></p>
         <h2 onclick="expand('10.21.12')" style="display:inline">10.</h2><h2 style="display:inline">21.12 One Direction Inspired Outfit</h2>
         
         <div id="10.21.12" style="display:none">
@@ -85,8 +92,12 @@
     <script>
       function expand(section) {
         page_section = document.getElementById(section)
-        if(page_section.style.display == 'none') {page_section.style.display = '';}
-        else {page_section.style.display = 'none';}
+        if (page_section.style.display == 'none') {
+          page_section.style.display = '';
+        }
+        else {
+          page_section.style.display = 'none';
+        }
         return false;
       }
     </script>

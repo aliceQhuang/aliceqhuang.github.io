@@ -92,12 +92,33 @@
     <script>
       function expand(section) {
         page_section = document.getElementById(section)
+        page_section_sign = document.getElementById(section + ' +');
         if (page_section.style.display == 'none') {
           page_section.style.display = '';
+          page_section_sign.style.color = '#7700ef';
         }
         else {
           page_section.style.display = 'none';
+          page_section_sign.style.color = '#5f5f5f';
         }
+        return false;
+      }
+      function expand_all() {
+        document.getElementById('11.10.12').style.display = '';
+        document.getElementById('11.10.12 +').style.color = '#7700ef';
+        document.getElementById('10.22.12').style.display = '';
+        document.getElementById('10.22.12 +').style.color = '#7700ef';
+        document.getElementById('10.21.12').style.display = '';
+        document.getElementById('10.21.12 +').style.color = '#7700ef';
+        return false;
+      }
+      function collapse_all() {
+        document.getElementById('11.10.12').style.display = 'none';
+        document.getElementById('11.10.12 +').style.color = '#5f5f5f';
+        document.getElementById('10.22.12').style.display = 'none';
+        document.getElementById('10.22.12 +').style.color = '#5f5f5f';
+        document.getElementById('10.21.12').style.display = 'none';
+        document.getElementById('10.21.12 +').style.color = '#5f5f5f';
         return false;
       }
     </script>

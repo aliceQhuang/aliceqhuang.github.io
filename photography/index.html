@@ -14,12 +14,12 @@
     <div class="wrapper">
       <!--Side/top bar-->
       <header>
-        <br/><h1>About Me</h1><!--CUSTOM-->
+        <br/><h1>Photography</h1><!--CUSTOM-->
         <!--<p class="view"><a href="https://github.com/aliceQhuang/aliceqhuang.github.io">View</a> the Project on GitHub</p>
         <p style="margin:13 0 0px;; font-size:12pt">
           Table of Contents
         </p>-->
-        <img style="max-width:125px;" src="http://37.media.tumblr.com/76e1b13bfbabfa969581d8752d60bb73/tumblr_n5rwjedSr51qimiffo1_500.png">
+        <img style="max-width:125px;" src="http://37.media.tumblr.com/636a52fe95bdf7313821488c5102dba9/tumblr_n5wgzmM4HL1qimiffo1_400.png">
         <p>
           <a href="http://aliceqhuang.github.io">About Me</a><br/>
           Book Reviews<br/>
@@ -39,8 +39,18 @@
       <!--Main body section-->
       <section>
         
-        <h6 style='font-size:50px'>Alice Huang</h6>
-        <h2>Welcome to my website!</h2>
+        <h6 style='font-size:50px'>My Photos</h6>
+        
+        <p onclick="expand('Nature')" style="display:inline" id="Nature +"><b>+ </b></p>
+        <h3 onclick="expand('Nature')" style="display:inline">Nat</h3><h3 style="display:inline">ure</h3>
+        
+        <div id="Nature" style="display:none">
+        
+          <img src="http://25.media.tumblr.com/tumblr_m7zb8i1EJH1qimiffo1_1280.jpg" alt="Flowers in Spring"><br/>
+          <img src="http://25.media.tumblr.com/tumblr_m7zb20OFi71qimiffo1_1280.jpg" alt="Butterfly"><br/>
+          <img src="http://31.media.tumblr.com/tumblr_m7zav7cAPB1qimiffo1_1280.jpg" alt="Delicate Flowers"><br/>
+          
+        </div>
 
         
       </section>
@@ -59,7 +69,7 @@
         page_section_sign = document.getElementById(section + ' +');
         if (page_section.style.display == 'none') {
           page_section.style.display = '';
-          page_section_sign.style.color = '#f000f0';
+          page_section_sign.style.color = '#ef0078';
         }
         else {
           page_section.style.display = 'none';

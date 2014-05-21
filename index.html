@@ -88,7 +88,7 @@
         <p onclick="collapse_all()" style="margin:0 0 3px; display:inline">collapse all</p><br/>-->
         
         <!--Qualifications Summary Section-->
-        <p onclick="expand('Qualifications Summary'); style.color='#f000f0';" style="display:inline">+ </p>
+        <p onclick="expand('Qualifications Summary')" style="display:inline" id="Qualifications Summary +">+ </p>
         <h3 onclick="expand('Qualifications Summary')" style="display:inline">Qua</h3><h3 style="display:inline">lifications Summary</h3>
         
         <div id="Qualifications Summary" style="display:none">
@@ -103,7 +103,7 @@
         
         <!--Work Experience Section, TO DO: Fill in with Maxxian (Software Developer)-->
         <p></p>
-        <p onclick="expand('Work Experience')" style="display:inline">+ </p>
+        <p onclick="expand('Work Experience')" style="display:inline" id="Work Experience +">+ </p>
         <h3 onclick="expand('Work Experience')" style="display:inline">Wor</h3><h3 style="display:inline">k Experience</h3>
         
         <div id="Work Experience" style="display:none">
@@ -117,7 +117,7 @@
         
         <!--Education Section-->
         <p></p>
-        <p onclick="expand('Education')" style="display:inline">+ </p>
+        <p onclick="expand('Education')" style="display:inline" id="Education +">+ </p>
         <h3 onclick="expand('Education')" style="display:inline">Edu</h3><h3 style="display:inline">cation</h3>
         
         <div id="Education" style="display:none">
@@ -146,7 +146,7 @@
         
         <!--Personal Projects Section-->
         <p></p>
-        <p onclick="expand('Personal Projects')" style="display:inline">+ </p>
+        <p onclick="expand('Personal Projects')" style="display:inline" id="Personal Projects +">+ </p>
         <h3 onclick="expand('Personal Projects')" style="display:inline">Per</h3><h3 style="display:inline">sonal Projects</h3>
         
         <div id="Personal Projects" style="display:none">
@@ -197,7 +197,7 @@
         
         <!--Volunteer Experience Section-->
         <p></p>
-        <p onclick="expand('Volunteer Experience')" style="display:inline">+ </p>
+        <p onclick="expand('Volunteer Experience')" style="display:inline" id="Volunteer Experience +">+ </p>
         <h3 onclick="expand('Volunteer Experience')" style="display:inline">Vol</h3><h3 style="display:inline">unteer Experience</h3>
         
         <div id="Volunteer Experience" style="display:none">
@@ -238,7 +238,7 @@
 
         <!--Awards & Achievements Section-->
         <p></p>
-        <p onclick="expand('Awards &amp Achievements')" style="display:inline">+ </p>
+        <p onclick="expand('Awards &amp Achievements')" style="display:inline" id="Awards &amp Achievements +">+ </p>
         <h3 onclick="expand('Awards &amp Achievements')" style="display:inline">Awa</h3><h3 style="display:inline">rds &amp Achievements</h3>
         
         <div id="Awards &amp Achievements" style="display:none">
@@ -280,22 +280,25 @@
     <script src="javascripts/scale.fix.js"></script>
     <script>
       function expand(section) {
-        page_section = document.getElementById(section); /*added ;*/
+        page_section = document.getElementById(section);
+        page_section_sign = document.getElementById(section + ' +');
         if (page_section.style.display == 'none') {
           page_section.style.display = '';
+          page_section_sign.style.color = '#f000f0';
         }
         else {
           page_section.style.display = 'none';
+          page_section_sign.style.color = '#5f5f5f';
         }
         return false;
       }
-      function expand_all() {
+      /*function expand_all() {
         page_sections = document.getElementsByTagName("div");
         for (i=0; i<page_sections.length; i++) {
           page_sections[i].style.display = '';
         }
         return false;
-      }
+      }*/
       function collapse_all() {
         document.getElementById('Qualifications Summary').style.display = 'none';
         document.getElementById('Work Experience').style.display = 'none';

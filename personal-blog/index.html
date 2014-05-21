@@ -14,12 +14,8 @@
     <div class="wrapper">
       <!--Side/top bar-->
       <header>
-        <br/><h1>Photography</h1><!--CUSTOM-->
-        <!--<p class="view"><a href="https://github.com/aliceQhuang/aliceqhuang.github.io">View</a> the Project on GitHub</p>
-        <p style="margin:13 0 0px;; font-size:12pt">
-          Table of Contents
-        </p>-->
-        <img style="max-width:125px;" src="http://37.media.tumblr.com/636a52fe95bdf7313821488c5102dba9/tumblr_n5wgzmM4HL1qimiffo1_400.png">
+        <br/><h1>Personal Blog</h1><!--CUSTOM-->
+        <img style="max-width:125px;" src="http://37.media.tumblr.com/97bd9dfc7321ff99f634831e04b1b367/tumblr_n5wh2zChJn1qimiffo1_400.png">
         <p>
           <a href="http://aliceqhuang.github.io">About Me</a><br/>
           Book Reviews<br/>
@@ -39,7 +35,14 @@
       <!--Main body section-->
       <section>
         
-        <h6 style='font-size:50px'>My Photos</h6><br/>
+        <h6 style='font-size:50px'>Adventures &amp Their Thoughts</h6><br/>
+        
+        <p onclick="expand('05.20.14')" style="display:inline" id="05.20.14 +"><b>+ </b></p>
+        <h3 onclick="expand('05.20.14')" style="display:inline">Mis</h3><h3 style="display:inline">sing Connections of Generations</h3>
+        
+        <div id="05.20.14" style="display:none">
+          <p>Once upon a time...</p>
+        </div>
         
       </section>
       
@@ -57,7 +60,7 @@
         page_section_sign = document.getElementById(section + ' +');
         if (page_section.style.display == 'none') {
           page_section.style.display = '';
-          page_section_sign.style.color = '#ef0078';
+          page_section_sign.style.color = '#0079e5';
         }
         else {
           page_section.style.display = 'none';

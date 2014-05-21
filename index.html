@@ -77,7 +77,7 @@
                     expand('Awards &amp Achievements');" 
                     style="margin:0 0 0px">expand all</p>-->
                     
-        <p onclick="expand_all()" style="margin:0 0 3 3px; display:inline">expand all</p>
+        <p onclick="expand_all()" style="margin:0 0 3px; right-margin:3px; display:inline">expand all</p>
         <p onclick="collapse_all()" style="margin:0 0 3px; display:inline">&nbsp;collapse all</p><br/>
         
         <!--Qualifications Summary Section-->
@@ -286,9 +286,14 @@
         return false;
       }
       function collapse_all() {
-        page_sections = document.getElementsByClassName("div");
-        for(i=0; i<page_sections.length; i++) {
-          page_sections[i].style.display = 'none';
+        document.getElementById('Qualifications Summary').style.display = 'none';
+        document.getElementById('Work Experience').style.display = 'none';
+        document.getElementById('Education').style.display = 'none';
+        document.getElementById('Education').style.display = 'none';
+        document.getElementById('Education').style.display = 'none';
+        document.getElementById('Education').style.display = 'none';
+        document.getElementById('Education').style.display = 'none';
+        document.getElementById('Education').style.display = 'none';
         }
       }
     </script>

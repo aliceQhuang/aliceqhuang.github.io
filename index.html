@@ -47,8 +47,8 @@
               <div id="pale" style="background-color:fefefc; height:1px; width:1px">&nbsp;</div></td>
           </tr>
         </table>-->
-        <p style="font-size:13px; display:inline" onclick="alert('increase')">A</p>
-        <p style="font-size:11px; display:inline" onclick="alert('decrease')">A</p>
+        <p style="font-size:14px; display:inline" onclick="increase_font()">A </p>
+        <p style="font-size:10px; display:inline" onclick="decrease_font()">A </p>
         <p></p>
         
         <h6 style='font-size:50px'>Alice Huang</h6>
@@ -348,6 +348,12 @@
         document.getElementById('Awards & Achievements').style.display = 'none';
         document.getElementById('Awards & Acheivements +').style.color = '#5f5f5f';
         return false;
+      }
+      function increase_font(){
+        document.getElementById("wrapper").style.fontSize += 2;
+      }
+      function decrease_font(){
+        document.getElementById("wrapper").style.fontSize -= 2;
       }
     </script>
     

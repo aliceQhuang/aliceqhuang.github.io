@@ -107,7 +107,7 @@
           </ul>
         </div>
         
-        <!--Work Experience Section, TO DO: Fill in with Maxxian (Software Developer)-->
+        <!--Work Experience Section-->
         <p></p>
         <p onclick="expand('Work Experience')" style="display:inline" id="Work Experience +"><b>+ </b></p>
         <h3 onclick="expand('Work Experience')" style="display:inline">Wor</h3><h3 style="display:inline">k Experience</h3>
@@ -121,9 +121,37 @@
           </table>
           <ul>
             <li>Enhanced features on company's web application</li>
+            <ul>
+              <li>Added search filters for tables using Ajax to reduce page reloads</li>
+              <li>Created simplified mapping algorithms for human readable interface names, integrated new tables within the current database and changed current code to reference new mapping tables (requiring mass upgrade to company's codebase and database)</li>
+              <li>Designed web pages with multiple tables in different tabs and pop-up windows</li>
+              <li>Fixed SQL render functions so that GUI tables can be sorted by multiple columns</li>
+            </ul>
+            
             <li>Contributed to improving company's development processes</li>
+            <ul>
+              <li>Abstracted a cronjob manager to run in-house simulated builds on development servers, with user-friendly implementation on the frontend</li>
+              <li>Added export functions to current builds to properly sync up primary and backup servers</li>
+              <li> Configured a new VM image with Centos 6.5, MySQL, Ruby on Rails, Apache, and Webrick to install the newest version of Redmine (2.5.2)</li>
+              <li>Heavily documented any new or confusing code and processes</li>
+              <li>Wrote script to upload all modified files in a local branch to the testing servers</li>
+              <li>Suggested new way of getting render classes within the codebase so the naming of the files and their locations are more flexible </li>
+            </ul>
+            
             <li>Researched new libraries and presented findings to rest of development team</li>
+            <ul>
+              <li>Gave a presentation on the Python library, argparse, which simplifies the interpretation of arguments given to a module through command line</li>
+              <li>Proposed the change to the Hstore data type for specific columns that require flexibility in the data stored</li>
+              <li>Documented the difference between three different types of inserts in PostgreSQL (line-by-line, multiline, and bulk load)</li>
+              <li>Documented the difference between running mass updates on a table and creating a new table with the updated data</li>
+            </ul>
+            
             <li>Participated in company meetings</li>
+            <ul>
+              <li>Daily scrum meetings and weekly update meetings</li>
+              <li>Customer demos</li>
+              <li>Presentations given by fellow developers</li>
+            </ul>
           </ul>
         </div>
         

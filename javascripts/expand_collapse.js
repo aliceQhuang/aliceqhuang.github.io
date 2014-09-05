@@ -1,3 +1,7 @@
+function alice() {
+  alert("alice");
+}
+
 function expand_all() {
   document.getElementById('Qualifications Summary').style.display = '';
   document.getElementById('Qualifications Summary +').style.color = '#f000f0';
